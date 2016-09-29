@@ -4,6 +4,7 @@ window.onload = function () {
 }
 
 function getHTTPObject () {
+	// IE7之前的版本中不支持原生的XHR对象
 	if (typeof XMLHttpRequest === "undefined") {
 		XMLHttpRequest = function() {
 			try { return new ActiveXObject("Msxml2.XMLHTTP.6.0"); }
@@ -40,5 +41,5 @@ function getNewContent () {
 		alert('Sorry, your browser doesn\'t support XMLHttpRequest');
 	}
 	// 先弹出，等待响应的过程中先继续向后执行到这里
-	alert('Function Done!')
+	alert('Function Done!');
 }
