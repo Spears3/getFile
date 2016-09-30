@@ -1,3 +1,4 @@
-# getFile
+#getFile
 一个实践ajax的简单demo，后端基于node.js的express框架
 点击页面p元素，异步发送ajax请求example.txt文件，将文件内容显示在页面中
+详情见[Wiki](https://github.com/seed-fe/getFile/wiki)页面
